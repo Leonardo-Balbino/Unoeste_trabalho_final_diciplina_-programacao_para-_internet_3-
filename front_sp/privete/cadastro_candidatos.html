@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Partidos</title>
+    <link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+    <section id="menu-section">
+        <h2>Sistema Político</h2>
+        <div>
+            <a href="./cadastro_partidos.html" id="cadastro-partidos-btn">Cadastro de Partidos</a>
+            <a href="./cadastro_candidatos.html" id="cadastro-candidatos-btn">Cadastro de Candidatos</a>
+        </div>
+    </section>
+    <section id="cadastro-candidatos-section">
+        <h2>Cadastro de Candidatos</h2>
+        <form id="cadastro-candidatos-form">
+            <label for="nome-candidato">Nome:</label>
+            <input type="text" id="nome-candidato" name="nome-candidato" required>
+            <label for="partido-candidato">Partido:</label>
+            <select id="partido-candidato" name="partido-candidato" required>
+                <option value="">Selecione um partido</option>
+            </select>
+            <label for="numero-candidato">Número do Candidato:</label>
+            <input type="number" id="numero-candidato" name="numero-candidato" required>
+            <button type="submit">Cadastrar Candidato</button>
+        </form>
+        <div id="mensagem"></div>
+        <h3>Candidatos Cadastrados</h3>
+        <table id="tabela-candidatos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Partido</th>
+                    <th>Número do Candidato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de candidatos cadastrados serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </section>
+    <script src="./js/candidatos.js"></script>
+</body>
+</html>

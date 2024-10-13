@@ -1,0 +1,19 @@
+{
+  "name": "front_sp",
+  "version": "1.0.0",
+  "description": "Brazil's policy management system",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Vinicius Balbino",
+  "license": "ISC",
+  "dependencies": {
+    "authenticate": "^0.1.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "front_sp": "file:"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <link rel="stylesheet" href="./css/styleDetail.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Detalhes do Evento</h1>
+        <p><strong>Nome:</strong> Show sertanejo Luan Santana mais uma vez</p>
+        <p><strong>Data:</strong> 01/09/2024</p>
+        <p><strong>Horário:</strong> 18:00</p>
+        <p><strong>Local:</strong> São Paulo, SP</p>
+        <p><strong>Preço:</strong> R$ 100,00</p>
+        <p><strong>Quantidade de Ingressos Disponíveis:</strong> 50</p>
+        <p><strong>Descrição:</strong> Show sertanejo Luan Santana mais uma vez</p>
+        
+        <div class="ticket-selection">
+            <label for="ticketQuantity">Quantidade de Ingressos:</label>
+            <input type="number" id="ticketQuantity" name="ticketQuantity" min="1" max="50" value="1" onchange="calculateTotal()">
+        </div>
+        
+        <p><strong>Valor Total:</strong> R$ <span id="totalPrice">100,00</span></p>
+        
+        <button onclick="window.history.back()">Voltar</button>
+        <button onclick="comprarIngressos()">Comprar</button>
+    </div>
+
+    <script src="./script.js"></script>
+   
+</body>
+</html>
+

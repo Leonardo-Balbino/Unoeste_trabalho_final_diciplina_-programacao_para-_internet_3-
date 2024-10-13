@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Partidos</title>
+    <link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+    <section id="menu-section">
+        <h2>Sistema Político</h2>
+        <div>
+            <a href="./cadastro_partidos.html" id="cadastro-partidos-btn">Cadastro de Partidos</a>
+            <a href="./cadastro_candidatos.html" id="cadastro-candidatos-btn">Cadastro de Candidatos</a>
+        </div>
+    </section>
+    <section id="cadastro-partidos-section">
+        <h2>Cadastro de Partidos</h2>
+        <form id="cadastro-partidos-form">
+            <label for="nome-partido">Nome:</label>
+            <input type="text" id="nome-partido" name="nome-partido" required>
+            <label for="sigla-partido">Sigla:</label>
+            <input type="text" id="sigla-partido" name="sigla-partido" required>
+            <label for="numero-registro">Número de Registro:</label>
+            <input type="number" id="numero-registro" name="numero-registro" required>
+            <button type="submit">Cadastrar Partido</button>
+        </form>
+        <div id="mensagem"></div>
+        <h3>Partidos Cadastrados</h3>
+        <table id="tabela-partidos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sigla</th>
+                    <th>Número de Registro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de partidos cadastrados serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </section>
+    
+    <script src="./js/partido.js"></script>
+    
+</body>
+</html>
